@@ -7,7 +7,6 @@ oracion(O):- respuesta(O).
 respuesta(R):- afirmacion(R).
 respuesta(R):- negacion(R).
 
-sintagma_nominal(SN):- nombre(SN).
 sintagma_nominal(SN):- saludo(SAL),sustantivo(S),append(SAL,S,SN).
 sintagma_nominal(SN):- saludo(SAL),nombre(N),append(SAL,N,SN).
 sintagma_nominal(SN):- articulo(A), nombre(N), append(A,N,SN).
@@ -17,10 +16,9 @@ sintagma_nominal(SN):- sustantivo(SN).
 sintagma_nominal(SN):- preposicion(P),lugar(L),append(P,L,SN).
 sintagma_nominal(SN):- expresion(E),preposicion(P),append(E,P,SN).
 
-
 sintagma_verbal(SV):- verbo(V), sintagma_nominal(SN), append(V,SN,SV).
 sintagma_verbal(SV):- verbo(V), sintagma_verbal2(SV2), append(V,SV2,SV).
-sintagma_verbal(SV):- verbo_pronomial(VP),sintagma_verbal2(SV2),append(VP,SV2,SV).
+sintagma_verbal(SV):- verbo_auxiliar(VA),sintagma_verbal2(SV2),append(VA,SV2,SV).
 sintagma_verbal(SV):- verbo(SV).
 
 sintagma_verbal2(SV2):- indefinido(I), sintagma_verbal3(SV3), append(I,SV3,SV2).
@@ -41,18 +39,22 @@ articulo([al]). %contractos
 articulo([del]). %contractos
 articulo([lo]). %neutro
 
-nombre([oscar]).
-nombre([andres]).
-nombre([barrios]).
-nombre([dilan]).
-nombre([racso]).
-
 verbo([estoy]).
+verbo([encuentro]).
+verbo([hallo]).
+verbo([situo]).
+verbo([localizo]).
+verbo([residuo]).
+verbo([voy]).
+verbo([ir]).
+verbo([dirigo]).
+verbo([encamino]).
 verbo([tengo]).
 verbo([pasar]).
 verbo([gustaria]).
 verbo([ubica]).
 verbo([utilizar]).
+verbo([ir]).
 
 saludo([hola]).
 saludo([buenosdias]).
@@ -121,8 +123,9 @@ sustantivo([boule]).
 
 indefinido([que]).
 
-verbo_pronomial([me]).
-verbo_pronomial([se]).
+verbo_auxiliar([me]).
+verbo_auxiliar([se]).
+verbo_auxiliar([quiero]).
 
 afirmacion([si]).
 negacion([no]).

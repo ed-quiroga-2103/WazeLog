@@ -5,7 +5,7 @@ import java.util.Vector;
 public class GraphNode<T>{
 
     private T data;
-    private int ID;
+    private Integer ID;
     private Vector<Arc<T>> arcList = new Vector<Arc<T>>();
 
     /**
@@ -13,7 +13,7 @@ public class GraphNode<T>{
      * @param data
      * @param ID
      */
-    GraphNode(T data, int ID){
+    GraphNode(T data, Integer ID){
 
         this.data = data;
         this.ID = ID;
@@ -27,7 +27,7 @@ public class GraphNode<T>{
      * @param weight
      *
      */
-    public void newArc(GraphNode<T> newNode, int weight){
+    public void newArc(GraphNode<T> newNode, Integer weight){
 
         Arc<T> newArc = new Arc<T>(newNode, weight);
 
@@ -55,11 +55,11 @@ public class GraphNode<T>{
 
     //Getters and Setters for all attributes of the class
 
-    public int getID() {
+    public Integer getID() {
         return ID;
     }
 
-    public void setID(int ID) {
+    public void setID(Integer ID) {
         this.ID = ID;
     }
 

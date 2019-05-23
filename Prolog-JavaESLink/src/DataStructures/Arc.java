@@ -4,9 +4,9 @@ package DataStructures;
 public class Arc<T> {
 
     private GraphNode<T> node;
-    private int weight = 0;
+    private Integer weight = 0;
 
-    Arc(GraphNode<T> node, int weight){
+    Arc(GraphNode<T> node, Integer weight){
 
         this.node = node;
         this.weight = weight;
@@ -24,11 +24,11 @@ public class Arc<T> {
         this.node = node;
     }
 
-    public int getWeight() {
+    public Integer getWeight() {
         return weight;
     }
 
-    public void setWeight(int weight) {
+    public void setWeight(Integer weight) {
         this.weight = weight;
     }
 }

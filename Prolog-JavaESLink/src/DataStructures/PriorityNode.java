@@ -3,7 +3,7 @@ package DataStructures;
 public class PriorityNode<T> {
     GraphNode<T> node;
     GraphNode<T> previous;
-    int weight;
+    Integer weight;
 
     public PriorityNode(GraphNode<T> node, GraphNode<T> previous, int weight) {
         this.node = node;
@@ -15,7 +15,7 @@ public class PriorityNode<T> {
         return weight;
     }
 
-    public void setWeight(int weight) {
+    public void setWeight(Integer weight) {
         this.weight = weight;
     }
 

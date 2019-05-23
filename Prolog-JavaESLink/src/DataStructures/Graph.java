@@ -7,7 +7,7 @@ public class Graph<T> {
 
     private GraphNode<T> start = null;
 
-    private int currentID = 0;
+    private Integer currentID = 0;
 
     private Vector<GraphNode<T>> nodeList = new Vector<GraphNode<T>>();
 
@@ -39,9 +39,9 @@ public class Graph<T> {
 
             for (Arc<T> adjacent :current.getArcList()) {
 
-                int currentInd = this.nodeList.indexOf(current);
-                int adjInd = this.nodeList.indexOf(adjacent.getNode());
-                int distance = distances.get(currentInd) + adjacent.getWeight();
+                Integer currentInd = this.nodeList.indexOf(current);
+                Integer adjInd = this.nodeList.indexOf(adjacent.getNode());
+                Integer distance = distances.get(currentInd) + adjacent.getWeight();
 
                 if(distances.get(adjInd) == -1){
                     distances.set(adjInd,distance);
@@ -67,10 +67,6 @@ public class Graph<T> {
         GraphNode<T> destinyNode = this.getNode(destiny);
         Vector<GraphNode<T>> route = new Vector<>();
 
-
-        int stackSize = stack.getStack().size();
-
-
         while(destinyNode != originNode){
 
 
@@ -84,7 +80,7 @@ public class Graph<T> {
 
         route.add(originNode);
 
-        int distance = distances.get(this.nodeList.indexOf(this.getNode(destiny)));
+        Integer distance = distances.get(this.nodeList.indexOf(this.getNode(destiny)));
 
         System.out.println("Route: ");
 
@@ -103,7 +99,7 @@ public class Graph<T> {
 
     }
 
-    public boolean connectNodes(T data1, T data2, int weight){
+    public boolean connectNodes(T data1, T data2, Integer weight){
 
         if(this.nodeExists(data1) & this.nodeExists(data2)){
 
@@ -157,9 +153,9 @@ public class Graph<T> {
 
             for (Arc<T> adjacent :current.getArcList()) {
 
-                int currentInd = this.nodeList.indexOf(current);
-                int adjInd = this.nodeList.indexOf(adjacent.getNode());
-                int distance = distances.get(currentInd) + adjacent.getWeight();
+                Integer currentInd = this.nodeList.indexOf(current);
+                Integer adjInd = this.nodeList.indexOf(adjacent.getNode());
+                Integer distance = distances.get(currentInd) + adjacent.getWeight();
 
                 if(distances.get(adjInd) == -1){
                     distances.set(adjInd,distance);
@@ -190,7 +186,7 @@ public class Graph<T> {
 
     private GraphNode<T> getNextUnvisited(Vector<GraphNode<T>> visited, Vector<Integer> distances){
 
-        int min = -1;
+        Integer min = -1;
 
         GraphNode<T> next = null;
 
@@ -217,7 +213,7 @@ public class Graph<T> {
 
     }
 
-    public Vector<Integer> fillVector(int n){
+    public Vector<Integer> fillVector(Integer n){
 
         Vector<Integer> result = new Vector<Integer>();
 

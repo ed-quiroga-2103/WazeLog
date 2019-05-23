@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Prolog-JavaESLink.iml" filepath="$PROJECT_DIR$/Prolog-JavaESLink.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Prolog-JavaLink.iml" filepath="$PROJECT_DIR$/Prolog-JavaLink.iml" />
     </modules>
   </component>
 </project>

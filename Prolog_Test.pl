@@ -55,13 +55,12 @@ verbo([gustaria]).
 verbo([ubica]).
 verbo([utilizar]).
 verbo([ir]).
+verbo([llegar]).
 
 saludo([hola]).
 saludo([buenosdias]).
 saludo([buenastardes]).
 saludo([buenasnoches]).
-
-adjetivo([rico]).
 
 determinante([este]).
 determinante([aquel]).
@@ -85,27 +84,18 @@ lugar([cachi]).
 lugar([orosi]).
 
 preposicion([a]).
-preposicion([ante]).
-preposicion([bajo]).
 preposicion([con]).
 preposicion([de]).
 preposicion([desde]).
 preposicion([durante]).
 preposicion([en]).
-preposicion([entre]).
-preposicion([excepto]).
 preposicion([hacia]).
 preposicion([hasta]).
-preposicion([mediante]).
 preposicion([para]).
 preposicion([por]).
-preposicion([salvo]).
-preposicion([segun]).
-preposicion([sin]).
-preposicion([sobre]).
-preposicion([tras]).
 
-sustantivo([wazelog]).
+nombre([wazelog]).
+
 sustantivo([automercado]).
 sustantivo([supermercado]).
 sustantivo([parque]).
@@ -120,6 +110,7 @@ sustantivo([moe]).
 sustantivo([lelos]).
 sustantivo([lacali]).
 sustantivo([boule]).
+sustantivo([lanave]).
 
 indefinido([que]).
 

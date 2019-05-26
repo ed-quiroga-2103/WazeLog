@@ -12,6 +12,7 @@ sintagma_nominal(SN):- saludo(SAL),nombre(N),append(SAL,N,SN).
 sintagma_nominal(SN):- articulo(A), nombre(N), append(A,N,SN).
 sintagma_nominal(SN):- articulo(A), sustantivo(S), append(A,S,SN).
 sintagma_nominal(SN):- lugar(SN).
+sintagma_nominal(SN):- expresion(E),preposicion(P),append(E,P,SN).
 sintagma_nominal(SN):- sustantivo(SN).
 sintagma_nominal(SN):- preposicion(P),lugar(L),append(P,L,SN).
 sintagma_nominal(SN):- expresion(E),preposicion(P),append(E,P,SN).
@@ -111,6 +112,7 @@ sustantivo([lelos]).
 sustantivo([lacali]).
 sustantivo([boule]).
 sustantivo([lanave]).
+sustantivo([wazelog]).
 
 indefinido([que]).
 

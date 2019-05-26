@@ -1,1 +1,1 @@
-{"nodes":[{"x":212,"y":94,"label":"Alajuela","connections":[]},{"x":475,"y":93,"label":"Cartago","connections":[]}]}
+{"nodes":[{"x":94,"y":62,"label":"Lugar1","connections":[{"x":530,"y":241,"isDouble":false}]},{"x":530,"y":241,"label":"Lugar2","connections":[]}]}

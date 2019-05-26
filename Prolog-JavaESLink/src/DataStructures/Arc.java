@@ -15,7 +15,6 @@ public class Arc<T> {
 
 
     //Getters and Setters for all attributes of the class
-
     public GraphNode<T> getNode() {
         return node;
     }

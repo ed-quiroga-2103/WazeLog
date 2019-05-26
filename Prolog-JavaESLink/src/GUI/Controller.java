@@ -2,6 +2,7 @@ package GUI;
 
 import Backbone.GraphicNodeFactory;
 import Backbone.JSONManager;
+import DataStructures.ConnectionData;
 import DataStructures.GraphicData;
 import DataStructures.NodeData;
 import javafx.scene.Group;
@@ -12,7 +13,9 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
-import javafx.stage.Stage;
+import javafx.scene.shape.Line;
+import java.lang.Math;
+
 
 import java.awt.*;
 import java.util.Vector;
@@ -38,11 +41,28 @@ public class Controller {
         textDisplay.setScrollTop(Double.MAX_VALUE);
 
     }
+    public void UpdateText(String text, TextArea textDisplay,boolean clear){
+        if(clear) {
+            displayText = "";
+            displayText += text;
+            textDisplay.setText(this.displayText);
+
+            textDisplay.setScrollTop(Double.MAX_VALUE);
+        }
+        else{
+            displayText += text;
+            textDisplay.setText(this.displayText);
+
+            textDisplay.setScrollTop(Double.MAX_VALUE);
+        }
+    }
+
 
     public void drawPath(){
 
     }
 
+    //Fills the Choice Box with the nodes data
     public void fillBoxes(ChoiceBox<String> choiceBox, GraphicData graphicData){
 
         for (NodeData node:graphicData.getList()) {
@@ -54,11 +74,13 @@ public class Controller {
 
     }
 
+    //Draws nodes from metadata
     public void drawExistingNodes(Group root, GraphicData graphicData){
 
         Vector<Vector<Long>> coords = graphicData.getCoords();
         Vector<String> names = graphicData.getNames();
 
+        //Draws a circle from the coordinates and assigns its corresponding name
         for (int i = 0; i < coords.get(0).size(); i++) {
 
             Label newCircle = this.drawCircle(coords.get(0).get(i),coords.get(1).get(i), names.get(i),colorlist[colorInd]);
@@ -75,6 +97,7 @@ public class Controller {
         return GraphicNodeFactory.getCircle(x,y,color,graphicData);
 
     }
+
     public Label drawCircle(Long x, Long y, String text, Color color){
 
         return GraphicNodeFactory.getCircle(x,y,text,color);
@@ -92,9 +115,89 @@ public class Controller {
         catch (Exception e) {e.printStackTrace();}
     }
 
-    public void connectNodes(String node1, String node2, Integer distance, Boolean isDouble, GraphicData graphicData){
+    public void connectNodes(String node1, String node2, Integer distance, Boolean isDouble, GraphicData graphicData, Group root){
 
         graphicData.connectNodes(node1,node2,isDouble);
+
+        NodeData node = graphicData.getNode(node1);
+        NodeData conn = graphicData.getNode(node2);
+
+        Double x1 = (double) node.getX()+15;
+        Double x2 = (double) conn.getX()+15;
+        Double y1 = (double) node.getY()+15;
+        Double y2 = (double) conn.getY()+15;
+
+        if(isDouble) {
+            Line line = new Line(x1, y1, x2, y2);
+            line.toBack();
+            line.setStrokeWidth(5);
+            line.setStroke(Color.GREEN);
+            root.getChildren().add(1,line);
+
+        }
+        else{
+            Double midX = (x1+x2)/2;
+            Double midY = (y1+y2)/2;
+
+            Line line = new Line(x1, y1, midX, midY);
+            line.setStrokeWidth(5);
+            line.setStroke(Color.GREEN);
+            root.getChildren().add(1,line);
+
+            Line line2 = new Line(midX, midY, x2, y2);
+            line2.setStrokeWidth(5);
+            line2.setStroke(Color.YELLOW);
+            root.getChildren().add(1,line2);
+
+        }
+
+
+        try {
+            jsManager.writeJSON(graphicData.toJSON());
+        }
+        catch (Exception e) {e.printStackTrace();}
+
+
+    }
+
+    //Draws lines from metadata
+    public void drawExistingLines(Group root, GraphicData graphicData){
+
+        for (NodeData node:graphicData.getList()) {
+
+            for (ConnectionData conn:node.getConnections()) {
+
+                Double x1 = (double) node.getX()+15;
+                Double x2 = (double) conn.getX()+15;
+                Double y1 = (double) node.getY()+15;
+                Double y2 = (double) conn.getY()+15;
+
+                if(conn.getDouble()) {
+                    Line line = new Line(x1, y1, x2, y2);
+                    line.setStrokeWidth(5);
+                    line.setStroke(Color.GREEN);
+                    root.getChildren().add(line);
+                }
+                else{
+
+                    Double midX = (x1+x2)/2;
+                    Double midY = (y1+y2)/2;
+
+                    Line line = new Line(x1, y1, midX, midY);
+                    line.setStrokeWidth(5);
+                    line.setStroke(Color.GREEN);
+                    root.getChildren().add(line);
+
+                    Line line2 = new Line(midX, midY, x2, y2);
+                    line2.setStrokeWidth(5);
+                    line2.setStroke(Color.YELLOW);
+                    root.getChildren().add(line2);
+
+
+                }
+            }
+
+        }
 
     }
 

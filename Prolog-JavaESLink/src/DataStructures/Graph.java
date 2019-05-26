@@ -5,7 +5,6 @@ import java.util.Vector;
 
 public class Graph<T> {
 
-    private GraphNode<T> start = null;
 
     private Integer currentID = 0;
 
@@ -99,7 +98,7 @@ public class Graph<T> {
 
     }
 
-    public boolean connectNodes(T data1, T data2, Integer weight){
+    public Boolean connectNodes(T data1, T data2, Integer weight){
 
         if(this.nodeExists(data1) & this.nodeExists(data2)){
 
@@ -117,7 +116,7 @@ public class Graph<T> {
 
     }
 
-    public boolean nodeExists(T data){
+    public Boolean nodeExists(T data){
 
         for (GraphNode<T> current:this.nodeList) {
 
@@ -227,21 +226,6 @@ public class Graph<T> {
 
     }
 
-    public void printNodes(){
-
-        for (GraphNode<T> current:this.nodeList) {
-
-            System.out.print("Current node:");
-            System.out.println(current.getData());
-
-            System.out.println("Nodes:");
-
-            current.printNodes();
-
-            System.out.println();
-
-        }
-    }
 
 
 }

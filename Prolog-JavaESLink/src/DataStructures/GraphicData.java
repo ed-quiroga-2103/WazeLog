@@ -9,32 +9,37 @@ public class GraphicData {
 
     Vector<NodeData> list = new Vector<>();
 
+    //Creates a new NodeData and inserts it into the list
     public void newNode(String text, Double x, Double y){
 
         NodeData newNode = new NodeData(x.longValue(),y.longValue(),text);
         list.add(newNode);
 
     }
-
     public void newNode(NodeData nodeData){
 
         list.add(nodeData);
 
     }
 
+    //Connects two nodes
     public void connectNodes(String node1, String node2, Boolean isDouble){
 
+        //Gets the nodes for the connection
         NodeData nodeData1 = this.getNode(node1);
         NodeData nodeData2 = this.getNode(node2);
 
+        //Connects origin with destiny
         nodeData1.addNewConnection(nodeData2,isDouble);
 
+        //If the connection is non-directed, connects the destiny with the origin
         if(isDouble) nodeData2.addNewConnection(nodeData1,isDouble);
 
 
     }
 
-    private NodeData getNode(String data){
+    //Returns a node from a string corresponding to its name
+    public NodeData getNode(String data){
 
         NodeData result = null;
 
@@ -53,6 +58,7 @@ public class GraphicData {
 
     }
 
+    //Returns the corresponding JSON Object for the GraphicData instance
     public JSONObject toJSON(){
 
         JSONObject js = new JSONObject();
@@ -90,6 +96,7 @@ public class GraphicData {
         return coords;
     }
 
+    //Gets the names of all the nodes
     public Vector<String> getNames() {
         Vector<String> names = new Vector<>();
 
@@ -102,6 +109,7 @@ public class GraphicData {
         return names;
     }
 
+    //Gets the node list
     public Vector<NodeData> getList() {
         return list;
     }

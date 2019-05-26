@@ -18,7 +18,7 @@ import java.util.Scanner;
 import java.util.Vector;
 
 public class JSONManager {
-
+    //Writes a JSON Object into a text file
     public void writeJSON(JSONObject js) throws Exception{
 
         PrintWriter writer = new PrintWriter("metadata.txt", "UTF-8");
@@ -29,6 +29,7 @@ public class JSONManager {
 
     }
 
+    //Reads a text file and parses it into a JSON Object
     public JSONObject readJSON(String path) {
 
         try {
@@ -46,6 +47,7 @@ public class JSONManager {
         }
     }
 
+    //Returns a GraphicData Object from a JSON Object
     public GraphicData getGraphicDataFromJson(JSONObject js){
         if (js != null) {
             GraphicData graphicData = new GraphicData();
@@ -64,6 +66,7 @@ public class JSONManager {
         }
     }
 
+    //Returns a NodeData Object from a JSON Object
     private NodeData getNodeFromJSON(JSONObject js){
 
 
@@ -78,6 +81,7 @@ public class JSONManager {
         return newNode;
     }
 
+    //Returns a Vector with ConnectionData Objects from a JSON Object
     private Vector<ConnectionData> getConnectionFromJSON(JSONArray arr){
 
         Vector<ConnectionData> result = new Vector<>();

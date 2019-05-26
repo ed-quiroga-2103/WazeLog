@@ -42,7 +42,7 @@ public class GraphNode<T>{
      * Input: None
      * Output: Connected nodes (Printed, not returned; returns void)
      */
-    public void printNodes(){
+        public void printNodes(){
 
         for (Arc<T> current:arcList) {
 

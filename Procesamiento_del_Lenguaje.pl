@@ -6,6 +6,8 @@ run:- write("Ingrese la oracion:"),nl,read_line_to_codes(user_input,Cs), atom_co
 validacion(L):- ( oracion(L)-> write('La oracion es correcta')
               ; validacion_aux(L) ).
 
-validacion_aux(T) :- ( last_element(T,X),lugar([X])-> write('No entendi, podria volverlo a escribir siendo un poco mas especifico si no es mucha molestia')
-             ; last_element(T,X),sustantivo([X])-> write('No entendi, podria volverlo a escribir siendo un poco mas especifico si no es mucha molestia')
-             ; write('El lugar o ubicacion indicado no se encuentra en la base de datos') ).
+validacion_aux(T):- ( list_butlast(T,S),reverse(S,[],X),concatenar([cartago],X,P),reverse(P,[],E), oracion(E) -> validacion_aux2(T)
+                     ; write('No entendi, podria volverlo a escribir siendo un poco mas especifico si no es mucha molestia') ).
+
+validacion_aux2(T):- ( last_element(T,X),lugar([X]) -> write('no se que pasa')
+                     ; write('El lugar indicado no se encuentra en la base de datos') ).

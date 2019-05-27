@@ -2,16 +2,14 @@
 oracion(O):- sintagma_nominal(SN), sintagma_verbal(SV), append(SN,SV,O).
 oracion(O):- sintagma_nominal(O).
 oracion(O):- sintagma_verbal(O).
-oracion(O):- respuesta(O).
-
-respuesta(R):- afirmacion(R).
-respuesta(R):- negacion(R).
 
 sintagma_nominal(SN):- saludo(SAL),nombre(N),append(SAL,N,SN).
 sintagma_nominal(SN):- articulo(A), nombre(N), append(A,N,SN).
 sintagma_nominal(SN):- articulo(A), sustantivo(S), append(A,S,SN).
 sintagma_nominal(SN):- lugar(SN).
 sintagma_nominal(SN):- nombre(SN).
+sintagma_nominal(SN):- afirmacion(SN).
+sintagma_nominal(SN):- negacion(SN).
 sintagma_nominal(SN):- preposicion(P),lugar(L),append(P,L,SN).
 sintagma_nominal(SN):- expresion(E),preposicion(P),append(E,P,SN).
 
@@ -27,7 +25,7 @@ sintagma_verbal3(SV3):- verbo(V), sintagma_nominal(SN), append(V,SN,SV3).
 %Vocabulario
 articulo([un]).
 articulo([una]).
-articulo([al]). 
+articulo([al]).
 
 verbo([estoy]).
 verbo([encuentro]).
@@ -52,13 +50,6 @@ saludo([buenosdias]).
 saludo([buenastardes]).
 saludo([buenasnoches]).
 
-determinante([este]).
-determinante([aquel]).
-determinante([ese]).
-determinante([aquellos]).
-determinante([esta]).
-determinante([esas]).
-
 lugar([cartago]).
 lugar([tresrios]).
 lugar([sanjose]).
@@ -76,8 +67,6 @@ lugar([orosi]).
 preposicion([a]).
 preposicion([con]).
 preposicion([de]).
-preposicion([desde]).
-preposicion([durante]).
 preposicion([en]).
 preposicion([hacia]).
 preposicion([hasta]).
@@ -89,7 +78,7 @@ nombre([wazelog]).
 sustantivo([automercado]).
 sustantivo([supermercado]).
 sustantivo([parque]).
-sustantivo([motel]).
+sustantivo([puerto]).
 sustantivo([farmacia]).
 sustantivo([restaurante]).
 sustantivo([muelle]).

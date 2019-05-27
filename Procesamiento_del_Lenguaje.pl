@@ -1,7 +1,7 @@
 :-include('Prolog_Test.pl').
 :-include('Reglas.pl').
 
-run:- write("Escriba perro:"),nl,read_line_to_codes(user_input,Cs), atom_codes(A, Cs), atomic_list_concat(L, ' ', A), validacion(L).
+run:- write("Ingrese la oracion:"),nl,read_line_to_codes(user_input,Cs), atom_codes(A, Cs), atomic_list_concat(L, ' ', A), validacion(L).
 
 validacion(L):- ( oracion(L)-> write('La oracion es correcta')
               ; validacion_aux(L) ).

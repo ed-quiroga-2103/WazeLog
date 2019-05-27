@@ -7,20 +7,17 @@ oracion(O):- respuesta(O).
 respuesta(R):- afirmacion(R).
 respuesta(R):- negacion(R).
 
-sintagma_nominal(SN):- saludo(SAL),sustantivo(S),append(SAL,S,SN).
 sintagma_nominal(SN):- saludo(SAL),nombre(N),append(SAL,N,SN).
 sintagma_nominal(SN):- articulo(A), nombre(N), append(A,N,SN).
 sintagma_nominal(SN):- articulo(A), sustantivo(S), append(A,S,SN).
 sintagma_nominal(SN):- lugar(SN).
-sintagma_nominal(SN):- expresion(E),preposicion(P),append(E,P,SN).
-sintagma_nominal(SN):- sustantivo(SN).
+sintagma_nominal(SN):- nombre(SN).
 sintagma_nominal(SN):- preposicion(P),lugar(L),append(P,L,SN).
 sintagma_nominal(SN):- expresion(E),preposicion(P),append(E,P,SN).
 
 sintagma_verbal(SV):- verbo(V), sintagma_nominal(SN), append(V,SN,SV).
 sintagma_verbal(SV):- verbo(V), sintagma_verbal2(SV2), append(V,SV2,SV).
 sintagma_verbal(SV):- verbo_auxiliar(VA),sintagma_verbal2(SV2),append(VA,SV2,SV).
-sintagma_verbal(SV):- verbo(SV).
 
 sintagma_verbal2(SV2):- indefinido(I), sintagma_verbal3(SV3), append(I,SV3,SV2).
 sintagma_verbal2(SV2):- verbo(V),sintagma_nominal(SN),append(V,SN,SV2).
@@ -28,17 +25,9 @@ sintagma_verbal2(SV2):- verbo(V),sintagma_nominal(SN),append(V,SN,SV2).
 sintagma_verbal3(SV3):- verbo(V), sintagma_nominal(SN), append(V,SN,SV3).
 
 %Vocabulario
-articulo([el]).
-articulo([la]).
-articulo([los]).
-articulo([las]).
 articulo([un]).
 articulo([una]).
-articulo([unos]).
-articulo([unas]).
-articulo([al]). %contractos
-articulo([del]). %contractos
-articulo([lo]). %neutro
+articulo([al]). 
 
 verbo([estoy]).
 verbo([encuentro]).
@@ -102,17 +91,8 @@ sustantivo([supermercado]).
 sustantivo([parque]).
 sustantivo([motel]).
 sustantivo([farmacia]).
-sustantivo([restaurantes]).
+sustantivo([restaurante]).
 sustantivo([muelle]).
-sustantivo([macdonald]).
-sustantivo([tacobell]).
-sustantivo([burgerking]).
-sustantivo([moe]).
-sustantivo([lelos]).
-sustantivo([lacali]).
-sustantivo([boule]).
-sustantivo([lanave]).
-sustantivo([wazelog]).
 
 indefinido([que]).
 

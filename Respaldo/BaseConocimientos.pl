@@ -1,0 +1,13 @@
+lugar([tres_rios]).
+lugar([san_jose]).
+lugar([musgoverde]).
+lugar([corralillo]).
+lugar([pacayas]).
+lugar([cervantes]).
+lugar([pacayas]).
+lugar([paraiso]).
+lugar([juan_vinas]).
+lugar([turrialba]).
+lugar([cachi]).
+lugar([orosi]).
+lugar([cartago]).

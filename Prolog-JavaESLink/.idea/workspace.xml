@@ -2,25 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metadata.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/Communication/Messenger.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/ConnectionWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/ConnectionWindow$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/ConnectionWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/ConnectionWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/ConsultWindow$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/ConsultWindow$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/ConsultWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/ConsultWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/PopupWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/PopupWindow$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/PopupWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/PopupWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backbone/GraphicNodeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backbone/GraphicNodeFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Communication/Messenger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/ConnectionWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/ConnectionWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/ConsultWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/ConsultWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/MainWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/PopupWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/PopupWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/TEST.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test.pl" beforeDir="false" afterPath="$PROJECT_DIR$/../test.pl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dijkstra.pl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metadata.txt" beforeDir="false" afterPath="$PROJECT_DIR$/metadata.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test.pl" beforeDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -124,7 +108,7 @@
           <entry key="iml" value="1" />
           <entry key="java" value="75" />
           <entry key="pl" value="3" />
-          <entry key="txt" value="15" />
+          <entry key="txt" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -132,7 +116,7 @@
           <entry key="CLASS" value="5" />
           <entry key="IDEA_MODULE" value="1" />
           <entry key="JAVA" value="75" />
-          <entry key="PLAIN_TEXT" value="15" />
+          <entry key="PLAIN_TEXT" value="16" />
           <entry key="Perl" value="3" />
           <entry key="UML" value="7" />
           <entry key="XML" value="2" />
@@ -263,15 +247,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Backbone/GraphicNodeFactory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="297">
-              <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
+              <caret line="56" selection-start-line="56" selection-end-line="56" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#getCircle#0;class#GraphicNodeFactory#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/metadata.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="63" selection-start-column="63" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -337,13 +330,13 @@
         <option value="$PROJECT_DIR$/src/GUI/IDestWindow.java" />
         <option value="$PROJECT_DIR$/src/GUI/DeleteWindow.java" />
         <option value="$PROJECT_DIR$/src/GUI/ConnectionWindow.java" />
-        <option value="$PROJECT_DIR$/metadata.txt" />
         <option value="$PROJECT_DIR$/src/GUI/PopupWindow.java" />
         <option value="$PROJECT_DIR$/src/GUI/ConsultWindow.java" />
         <option value="$PROJECT_DIR$/src/Backbone/Messenger.java" />
         <option value="$PROJECT_DIR$/src/GUI/MainWindow.java" />
         <option value="$PROJECT_DIR$/src/GUI/Controller.java" />
         <option value="$PROJECT_DIR$/src/Backbone/GraphicNodeFactory.java" />
+        <option value="$PROJECT_DIR$/metadata.txt" />
       </list>
     </option>
   </component>
@@ -423,7 +416,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559084806418" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559085832860" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/jpl-7.0.1.jar!/" />
     <property name="project.structure.last.edited" value="Project" />
@@ -550,18 +543,18 @@
       <workItem from="1558967585600" duration="2810000" />
       <workItem from="1558970897789" duration="23222000" />
       <workItem from="1559059354670" duration="3193000" />
-      <workItem from="1559064363228" duration="9810000" />
+      <workItem from="1559064363228" duration="10894000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130544000" />
+    <option name="totallyTimeSpent" value="131628000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.24545455" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.24545455" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -570,7 +563,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32952693" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33278957" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33278957" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39967373" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -582,7 +575,7 @@
       <window_info anchor="bottom" id="Event Log" order="11" weight="0.045677" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32626426" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="14" weight="0.28548124" />
+      <window_info anchor="bottom" id="Terminal" order="14" visible="true" weight="0.28548124" />
       <window_info anchor="bottom" id="Version Control" order="15" weight="0.32952693" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1008,13 +1001,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/metadata.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/PopupWindow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
@@ -1095,11 +1081,18 @@
     <entry file="file://$PROJECT_DIR$/src/Backbone/GraphicNodeFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
-          <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getCircle#0;class#GraphicNodeFactory#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/metadata.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="63" selection-start-column="63" selection-end-column="63" />
         </state>
       </provider>
     </entry>

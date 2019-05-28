@@ -1,7 +1,5 @@
-:-include('BaseConocimientos.pl').
 :-dynamic
 	rpath/2.      % A reversed path
-
 
 path(From,To,Dist) :- edge(To,From,Dist).
 path(From,To,Dist) :- edge(From,To,Dist).
@@ -24,14 +22,11 @@ traverse(From) :-
 	traverse(From,[],0).              % Traverse from origin
 traverse(_).
 
-go(From, To, AL,AP) :-
+go(From, To) :-
 	traverse(From),                   % Find all distances
 	rpath([To|RPath], Dist)->         % If the target was reached
 	  reverse([To|RPath], Path),      % Report the path and distance
 	  Distance is round(Dist),
-	  writef('Shortest path is %w with distance %w = %w\n',
-	       [Path, Dist, Distance]),
-				 test(Path, Distance, AL, AP);
-	writef('There is no route from %w to %w\n', [From, To]).
-
-test(Camino, Distancia, RL, RP):- RL = Camino,RP = Distancia .
+	  writef('El camino más corto es %w con una distancia de = %w\n',
+	       [Path, Distance]);
+	writef('No hay ruta de %w hacia %w\n', [From, To]).

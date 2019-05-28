@@ -1,3 +1,5 @@
+:-include('BaseConocimientos.pl').
+
 %Reglas Gramaticales
 oracion(O):- sintagma_nominal(SN), sintagma_verbal(SV), append(SN,SV,O).
 oracion(O):- sintagma_nominal(O).
@@ -8,6 +10,7 @@ sintagma_nominal(SN):- articulo(A), nombre(N), append(A,N,SN).
 sintagma_nominal(SN):- articulo(A), sustantivo(S), append(A,S,SN).
 sintagma_nominal(SN):- lugar(SN).
 sintagma_nominal(SN):- nombre(SN).
+sintagma_nominal(SN):- saludo(SN).
 sintagma_nominal(SN):- afirmacion(SN).
 sintagma_nominal(SN):- negacion(SN).
 sintagma_nominal(SN):- preposicion(P),lugar(L),append(P,L,SN).
@@ -29,12 +32,13 @@ articulo([al]).
 
 verbo([estoy]).
 verbo([encuentro]).
+verbo([encuentra]).
+verbo([halla]).
 verbo([hallo]).
 verbo([situo]).
+verbo([localiza]).
 verbo([localizo]).
-verbo([residuo]).
 verbo([voy]).
-verbo([ir]).
 verbo([dirigo]).
 verbo([encamino]).
 verbo([tengo]).
@@ -46,23 +50,11 @@ verbo([ir]).
 verbo([llegar]).
 
 saludo([hola]).
-saludo([buenosdias]).
-saludo([buenastardes]).
-saludo([buenasnoches]).
+saludo([buenos_dias]).
+saludo([buenas_tardes]).
+saludo([buenas_noches]).
 
 lugar([cartago]).
-lugar([tresrios]).
-lugar([sanjose]).
-lugar([musgoverde]).
-lugar([corralillo]).
-lugar([pacayas]).
-lugar([cervantes]).
-lugar([pacayas]).
-lugar([paraiso]).
-lugar([juanvinas]).
-lugar([turrialba]).
-lugar([cachi]).
-lugar([orosi]).
 
 preposicion([a]).
 preposicion([con]).
@@ -82,6 +74,7 @@ sustantivo([puerto]).
 sustantivo([farmacia]).
 sustantivo([restaurante]).
 sustantivo([muelle]).
+sustantivo([banco]).
 
 indefinido([que]).
 
@@ -92,4 +85,4 @@ verbo_auxiliar([quiero]).
 afirmacion([si]).
 negacion([no]).
 
-expresion([muchasgracias]).
+expresion([muchas_gracias]).

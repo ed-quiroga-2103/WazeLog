@@ -1,10 +1,10 @@
 :-include('Prolog_Test.pl').
 :-include('Reglas.pl').
+:-include('Ruta.pl').
+:-include('BaseConocimientos.pl').
 
-%run:- write("Ingrese la oracion:"),nl,read_line_to_codes(user_input,Cs), atom_codes(A, Cs), atomic_list_concat(L, ' ', A), validacion(L).
-
-
-run:- A = write('Bienvenido a WazeLog la mejor lógica de llegar a su destino. Porfavor indíqueme donde se encuentra.'),A,nl,read_line_to_codes(user_input,Cs), atom_codes(A, Cs), atomic_list_concat(L, ' ', A), aux_run(L,[]).
+%run:- write("Ingrese la oracion:"),nl,read_line_to_codes(user_input,Cs), atom_codes(A, Cs), atomic_list_concat(L, ' ', A), validacion(L)
+run:- write('Bienvenido a WazeLog la mejor lógica de llegar a su destino. Porfavor indíqueme donde se encuentra.'),nl,read_line_to_codes(user_input,Cs), atom_codes(A, Cs), atomic_list_concat(L, ' ', A), aux_run(L,[]).
 
 aux_run(O,Z):- ( oracion(O) -> obtener_ubicacion(O,W), concatenar([W],Z,U), write('Muy bien, ¿Cual es su destino?'),nl,read_line_to_codes(user_input,Cs), atom_codes(A, Cs), atomic_list_concat(L, ' ', A), aux_run2(L,U)
                ; validacion_aux(O) ).
@@ -51,4 +51,4 @@ modificacion(L,Y):- first_element(L,X),concatenar([X],Y,Z), aux_modificacion(L,Z
 
 aux_modificacion(L,Z):- cola(L,X), cola(X,T), reverse(T,[],R), concatenar(R,Z,U),aux_modificacion2(L,U).
 
-aux_modificacion2(L,Z):- cola(L,X), first_element(X,T), concatenar([T],Z,U), reverse(U,[],R), presentacion(R,[]).
+aux_modificacion2(L,Z):- cola(L,X), first_element(X,T), concatenar([T],Z,U), reverse(U,[],R), routes(R).

@@ -35,3 +35,6 @@ presentacion(L,X):- ( L = [] -> reverse(X,[],Y), write(Y)
                     ; aux_presentacion(L,X) ).
 
 aux_presentacion(L,X):- first_element(L,Y),cola(L,R), first_element(R,O), agregar([Y,O],X,Q),presentacion(R,Q).
+
+
+split_to_list(X):- split_string(X, " ", "\s", L),write(L).

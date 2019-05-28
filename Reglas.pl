@@ -22,5 +22,10 @@ concatenar([],L,L).
 concatenar([X|M],L,[X|Z]):-concatenar(M,L,Z).
 
 reverse([], Zs, Zs).
-
 reverse([X|Xs], Ys, Zs):- reverse(Xs, [X|Ys], Zs).
+
+first_element([X|_], X).
+
+agregar(X,L1,[X|L1]).
+
+cola([_|T],T).

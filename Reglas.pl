@@ -29,3 +29,8 @@ first_element([X|_], X).
 agregar(X,L1,[X|L1]).
 
 cola([_|T],T).
+
+presentacion(L,X):- ( L = [] -> reverse(X,[],Y), write(Y)
+                    ; aux_presentacion(L,X) ).
+
+aux_presentacion(L,X):- first_element(L,Y),cola(L,R), first_element(R,O), agregar([Y,O],X,Q),cola(R,Z),presentacion(Z,Q).

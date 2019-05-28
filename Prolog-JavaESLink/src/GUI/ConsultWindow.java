@@ -14,6 +14,8 @@ import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
+import java.util.LinkedList;
+
 public class ConsultWindow {
     //Controller
     Controller controller = new Controller();
@@ -87,6 +89,21 @@ public class ConsultWindow {
                 }
                 catch (Exception e ){e.printStackTrace();}            }
         });
+        menuCon.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                try {
+                    DeleteWindow deleteWindow = new DeleteWindow();
+                    deleteWindow.start(distance, graphicData);
+                }
+                catch (Exception e){
+
+                    e.printStackTrace();
+
+                }
+            }
+        });
+
         button.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
@@ -97,13 +114,28 @@ public class ConsultWindow {
 
                 if (!originEmpty & !destinyEmpty) {
 
-                    String consult = controller.buildConsult(originBox.getValue().toLowerCase(), distance.getText().toLowerCase()
-                            , destinyBox.getValue().toLowerCase());
+                    if(distance.getText().length() != 0) {
 
-                    String consResult = controller.consultRoute(consult);
 
-                    controller.UpdateText(consResult,display,true);
-                    primaryStage.close();
+                        String consult = controller.buildConsult(originBox.getValue().toLowerCase(), distance.getText().toLowerCase()
+                                , destinyBox.getValue().toLowerCase());
+
+                        LinkedList<String> routes = controller.getAllRoutes(consult);
+                        String consResult = "";
+                        for (String str:routes) {
+                          consResult += str + "\n";
+                        }
+
+                        controller.UpdateText(consResult, display, true);
+                        primaryStage.close();
+                    }
+                    else{
+
+                        String consResult = controller.consultRoute(originBox.getValue(),destinyBox.getValue());
+                        controller.UpdateText(consResult, display, true);
+                        primaryStage.close();
+
+                    }
                 } else {
 
                     warning.setTextFill(Color.RED);
@@ -125,3 +157,5 @@ public class ConsultWindow {
 
     }
 }
+
+

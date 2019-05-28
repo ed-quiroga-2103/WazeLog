@@ -30,6 +30,7 @@ import org.json.simple.JSONObject;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.LinkedList;
 
 
 public class MainWindow extends Application {
@@ -194,8 +195,13 @@ public class MainWindow extends Application {
         button.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                if (text.getText().length() != 0) {
-                    controller.UpdateText(text, display);
+                if (text.getText().length() != 0 & text.getText().equals("Quiero realizar una consulta")) {
+                    ConsultWindow cw = new ConsultWindow();
+                    try {
+                        cw.start(graphicData, display);
+                        controller.UpdateText(text,display);
+                    }
+                    catch (Exception e ){e.printStackTrace();}
                 }
             }
         });
@@ -203,8 +209,13 @@ public class MainWindow extends Application {
         //Sending text
         text.setOnKeyPressed(ke -> {
             KeyCode keyCode = ke.getCode();
-            if (keyCode.equals(KeyCode.ENTER) & text.getText().length() != 0) {
-                controller.UpdateText(text, display);
+            if (keyCode.equals(KeyCode.ENTER) & text.getText().length() != 0 & text.getText().equals("Quiero realizar una consulta")) {
+                ConsultWindow cw = new ConsultWindow();
+                try {
+                    cw.start(graphicData, display);
+                    controller.UpdateText(text,display);
+                }
+                catch (Exception e){e.printStackTrace();}
             }
                 }
         );

@@ -55,8 +55,6 @@ public class GraphicNodeFactory {
         Circle circle = new Circle();
         NodeData newNode = new NodeData();
 
-        System.out.println("X: "+x.toString()+ " Y: "+y.toString());
-
         //Positioning the circle
         circle.setCenterX(x);
         circle.setCenterY(y);

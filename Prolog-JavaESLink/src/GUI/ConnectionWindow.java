@@ -1,5 +1,6 @@
 package GUI;
 
+import Backbone.Messenger;
 import DataStructures.GraphicData;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
@@ -28,6 +29,7 @@ public class ConnectionWindow {
     private ChoiceBox<String> destinyBox = new ChoiceBox<>();
     private TextField distance = new TextField();
     private CheckBox isDouble = new CheckBox("Se conecta hacia ambas direcciones?");
+    Messenger messenger = new Messenger();
 
     public void start(GraphicData graphicData, Group root) {
 
@@ -68,7 +70,21 @@ public class ConnectionWindow {
 
 
                 if(!originEmpty & !destinyEmpty & distance.getText().length() != 0){
-                    controller.connectNodes(originBox.getValue(), destinyBox.getValue(), 0, isDouble.isSelected(), graphicData, root);
+                    controller.connectNodes(originBox.getValue(), destinyBox.getValue(), 0,
+                            isDouble.isSelected(), graphicData, root);
+                    Integer dist = Integer.parseInt(distance.getText());
+                    try {
+
+                        String from = originBox.getValue();
+                        from = controller.replaceSpace(from).toLowerCase();
+
+                        String to = destinyBox.getValue();
+                        to = controller.replaceSpace(to).toLowerCase();
+
+                        messenger.addRoute(from, to, dist, isDouble.isSelected());
+                    }
+                    catch (Exception e) {e.printStackTrace();}
+
                     primaryStage.close();
                 }
                 else{

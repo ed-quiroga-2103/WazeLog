@@ -1,0 +1,16 @@
+lugar([guanacaste]).
+lugar([cartago]).
+lugar([heredia]).
+lugar([san_jose]).
+lugar([alajuela]).
+edge(alajuela,heredia,50).
+edge(alajuela,san_jose,1).
+edge(san_jose,heredia,10).
+edge(heredia,san_jose,10).
+edge(cartago,san_jose,50).
+edge(san_jose,cartago,50).
+edge(alajuela,cartago,5).
+edge(cartago,alajuela,5).
+edge(alajuela,guanacaste,10).
+edge(cartago,guanacaste,10).
+edge(guanacaste,cartago,10).

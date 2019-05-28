@@ -24,6 +24,7 @@ import java.lang.Math;
 
 import java.awt.*;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Vector;
 
 public class Controller {
@@ -39,7 +40,7 @@ public class Controller {
     //Updating text on screen
     public void UpdateText(TextField textInput, TextArea textDisplay){
 
-        String text = this.replaceSpace(textInput.getText());
+        String text = textInput.getText();
 
         displayText+= text + "\n";
 
@@ -115,48 +116,104 @@ public class Controller {
         LinkedList<String> holder = new LinkedList<String>();
         int i = 0;
         for (String part : parts) {
-            System.out.println(part);
             holder.add(part);
         }
         holder.remove(element);
         for (String elem: holder){
             if(i==0){
-                output.concat(elem);
+                output = output.concat(elem);
                 i++;
             }else{
-                output.concat(" "+ elem);
+                output = output.concat(" "+ elem);
             }
             output= output.replaceAll(" ", ",");
         }
-        System.out.println(output);
         return output;
     }
 
     public String replaceUnderscore(String answer){
-        String result = answer.replaceAll("_", "_");
+        String result = answer.replaceAll("_", " ");
         return result;
     }
 
-    public String consultRoute(String route){
+    public LinkedList<LinkedList<String>> getPairs(String consulta){
+        // Split line on comma.
+        LinkedList<String> temp = new LinkedList<String>();
+        LinkedList<LinkedList<String>> output = new LinkedList<LinkedList<String>>();
+        String[] parts = consulta.split(",");
+
+        for (String part : parts) {
+            temp.add(part);
+        }
+        for (int i = 1; i< temp.size(); i++){
+            LinkedList<String> temp2 = new LinkedList<String>();
+            temp2.add(temp.get(i-1));
+            temp2.add(temp.get(i));
+
+            output.add(temp2);
+        }
+        return output;
+
+    }
+
+    public LinkedList<String> getAllRoutes(String route){
+
+        LinkedList<LinkedList<String>> routes = this.getPairs(route);
+        LinkedList<String> list = new LinkedList<>();
+        for(int i =0; i<routes.size(); i++){
+
+            list.add(i+1+". "+this.consultRoute(routes.get(i).get(0), routes.get(i).get(1)));
+
+        }
+
+        return list;
+
+    }
+
+    public String consultRoute(String origin, String destiny){
+
+        String finalRoute = "";
 
         Query q1 =
                 new Query(
                         "consult",
-                        new Term[]{new Atom("/home/eduardo/Documents/WazeLog/test.pl")}
+                        new Term[]{new Atom("/home/eduardo/Documents/WazeLog/PrologFiles/Dijkstra.pl")}
                 );
         System.out.println("Consult " + (q1.hasSolution() ? "succeeded" : "failed"));
         Variable X = new Variable("X");
-        Query q4 =
-                new Query(
-                        "preg1",
-                        new Term[]{X}
-                );
-        java.util.Map<String,Term> solution;
+        Variable Y = new Variable("Y");
 
-        solution = q4.oneSolution();
+        origin = this.replaceSpace(origin);
+        destiny = this.replaceSpace(destiny);
+        try {
+            Query q4 =
+                    new Query(
+                            "go",
+                            new Term[]{new Atom(origin), new Atom(destiny), X, Y}
+                    );
+            java.util.Map<String, Term> solution;
 
-        return solution.get("X").toString();
+            solution = q4.oneSolution();
 
+            Term[] arr = solution.get("X").toTermArray();
+
+            finalRoute += "Su ruta es ";
+
+            Controller cont = new Controller();
+
+            for (int i = 0; i < arr.length; i++) {
+
+                finalRoute += cont.replaceUnderscore(arr[i].toString()) + " ";
+
+            }
+
+            finalRoute += "y su distancia para esta ruta es ";
+            finalRoute += solution.get("Y").toString();
+
+
+            return finalRoute;
+        }
+        catch (Exception e){return "No hay ruta entre los puntos seleccionados";}
     }
 
     //Draws nodes from metadata

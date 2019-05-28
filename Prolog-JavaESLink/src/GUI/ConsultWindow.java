@@ -100,7 +100,9 @@ public class ConsultWindow {
                     String consult = controller.buildConsult(originBox.getValue().toLowerCase(), distance.getText().toLowerCase()
                             , destinyBox.getValue().toLowerCase());
 
-                    controller.UpdateText(consult,display,true);
+                    String consResult = controller.consultRoute(consult);
+
+                    controller.UpdateText(consResult,display,true);
                     primaryStage.close();
                 } else {
 

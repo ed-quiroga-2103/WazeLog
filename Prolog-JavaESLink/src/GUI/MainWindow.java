@@ -233,35 +233,8 @@ public class MainWindow extends Application {
     }
 
     public static void main(String[] args) throws Exception {
-        //launch(args);
-        Query q1 =
-                new Query(
-                        "consult",
-                        new Term[]{new Atom("/home/eduardo/Documents/WazeLog/test.pl")}
-                );
-        System.out.println("consult " + (q1.hasSolution() ? "succeeded" : "failed"));
-        Variable X = new Variable("X");
-        Query q4 =
-                new Query(
-                        "preg1",
-                        new Term[]{X}
-                );
-        java.util.Map<String,Term> solution;
+        launch(args);
 
-        solution = q4.oneSolution();
-
-        System.out.println(solution.get("X"));
-        String f = "2018";
-        X = new Variable("X");
-        Variable Y = new Variable("Y");
-
-        Query q2 = new Query(
-                "preg2",
-                new Term[]{new Atom("alemania"),X,Y}
-        );
-        solution = q2.oneSolution();
-
-        System.out.println(solution.get("X"));
     }
 
 }

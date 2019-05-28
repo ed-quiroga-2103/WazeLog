@@ -14,6 +14,11 @@ import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Line;
+import org.jpl7.Atom;
+import org.jpl7.Query;
+import org.jpl7.Term;
+import org.jpl7.Variable;
+
 import java.lang.Math;
 
 
@@ -106,6 +111,28 @@ public class Controller {
     public String replaceUnderscore(String answer){
         String result = answer.replaceAll("_", "_");
         return result;
+    }
+
+    public String consultRoute(String route){
+
+        Query q1 =
+                new Query(
+                        "consult",
+                        new Term[]{new Atom("/home/eduardo/Documents/WazeLog/test.pl")}
+                );
+        System.out.println("Consult " + (q1.hasSolution() ? "succeeded" : "failed"));
+        Variable X = new Variable("X");
+        Query q4 =
+                new Query(
+                        "preg1",
+                        new Term[]{X}
+                );
+        java.util.Map<String,Term> solution;
+
+        solution = q4.oneSolution();
+
+        return solution.get("X").toString();
+
     }
 
     //Draws nodes from metadata

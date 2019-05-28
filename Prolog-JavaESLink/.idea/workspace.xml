@@ -2,32 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metadata.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/Backbone/GraphicNodeFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prolog-JavaLink/Backbone/GraphicNodeFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/Backbone/HelpTextFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prolog-JavaLink/Backbone/HelpTextFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/Backbone/JSONManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prolog-JavaLink/Backbone/JSONManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/ConnectionWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/ConnectionWindow$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/MainWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/MainWindow$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/MainWindow$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/MainWindow$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/MainWindow$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/MainWindow$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/MainWindow$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/MainWindow$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/MainWindow$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/MainWindow$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/MainWindow$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/MainWindow$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/MainWindow$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/MainWindow$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/MainWindow$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/MainWindow$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/MainWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/MainWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/PopupWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/PopupWindow$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/PopupWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/PopupWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backbone/GraphicNodeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backbone/GraphicNodeFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backbone/HelpTextFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backbone/HelpTextFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backbone/JSONManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backbone/JSONManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/ConnectionWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/ConnectionWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/ConsultWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/ConsultWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/MainWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/PopupWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/PopupWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.pl" beforeDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -149,14 +126,14 @@
         <counts>
           <entry key="dummy" value="19" />
           <entry key="fxml" value="6" />
-          <entry key="java" value="22414" />
+          <entry key="java" value="22541" />
           <entry key="pl" value="721" />
           <entry key="txt" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="22414" />
+          <entry key="JAVA" value="22541" />
           <entry key="PLAIN_TEXT" value="24" />
           <entry key="Perl" value="721" />
           <entry key="XML" value="6" />
@@ -169,11 +146,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GUI/MainWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="263" column="46" selection-start-line="263" selection-start-column="46" selection-end-line="263" selection-end-column="46" />
+            <state relative-caret-position="162">
+              <caret line="136" column="21" lean-forward="true" selection-start-line="136" selection-start-column="21" selection-end-line="136" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -181,11 +158,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/GUI/ConsultWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="100" column="65" selection-start-line="100" selection-start-column="65" selection-end-line="100" selection-end-column="65" />
+            <state relative-caret-position="194">
+              <caret line="104" column="52" selection-start-line="104" selection-start-column="52" selection-end-line="104" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -197,7 +174,7 @@
         <entry file="file://$PROJECT_DIR$/src/GUI/PopupWindow.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="87">
-              <caret line="33" column="27" lean-forward="true" selection-start-line="33" selection-end-line="34" />
+              <caret line="33" column="27" selection-start-line="33" selection-end-line="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -220,8 +197,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GUI/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="107" column="22" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
+            <state relative-caret-position="326">
+              <caret line="135" column="43" selection-start-line="135" selection-start-column="43" selection-end-line="135" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#UpdateText#1;class#Controller#0" />
@@ -302,9 +279,9 @@
         <option value="$PROJECT_DIR$/test.pl" />
         <option value="$PROJECT_DIR$/src/GUI/ConnectionWindow.java" />
         <option value="$PROJECT_DIR$/src/GUI/IDestWindow.java" />
-        <option value="$PROJECT_DIR$/src/GUI/ConsultWindow.java" />
-        <option value="$PROJECT_DIR$/src/GUI/Controller.java" />
         <option value="$PROJECT_DIR$/src/GUI/MainWindow.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Controller.java" />
+        <option value="$PROJECT_DIR$/src/GUI/ConsultWindow.java" />
       </list>
     </option>
   </component>
@@ -384,7 +361,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559062530992" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559063258612" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/jpl-7.0.1.jar!/" />
     <property name="project.structure.last.edited" value="Project" />
@@ -510,12 +487,12 @@
       <workItem from="1558889123860" duration="13992000" />
       <workItem from="1558967585600" duration="2810000" />
       <workItem from="1558970897789" duration="23222000" />
-      <workItem from="1559059354670" duration="3193000" />
+      <workItem from="1559059354670" duration="3843000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120734000" />
+    <option name="totallyTimeSpent" value="121384000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
@@ -979,7 +956,17 @@
     <entry file="file://$PROJECT_DIR$/src/GUI/PopupWindow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
-          <caret line="33" column="27" lean-forward="true" selection-start-line="33" selection-end-line="34" />
+          <caret line="33" column="27" selection-start-line="33" selection-end-line="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/MainWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="136" column="21" lean-forward="true" selection-start-line="136" selection-start-column="21" selection-end-line="136" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -988,8 +975,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="107" column="22" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
+        <state relative-caret-position="326">
+          <caret line="135" column="43" selection-start-line="135" selection-start-column="43" selection-end-line="135" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#UpdateText#1;class#Controller#0" />
@@ -1008,18 +995,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/ConsultWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="100" column="65" selection-start-line="100" selection-start-column="65" selection-end-line="100" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/MainWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="263" column="46" selection-start-line="263" selection-start-column="46" selection-end-line="263" selection-end-column="46" />
+        <state relative-caret-position="194">
+          <caret line="104" column="52" selection-start-line="104" selection-start-column="52" selection-end-line="104" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

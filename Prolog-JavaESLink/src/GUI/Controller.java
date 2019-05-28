@@ -18,6 +18,7 @@ import java.lang.Math;
 
 
 import java.awt.*;
+import java.util.LinkedList;
 import java.util.Vector;
 
 public class Controller {
@@ -101,6 +102,29 @@ public class Controller {
 
         return result;
 
+    }
+
+    public String deleteElement(String input, String element){
+        String output = new String();
+        String[] parts = input.split(",");
+        LinkedList<String> holder = new LinkedList<String>();
+        int i = 0;
+        for (String part : parts) {
+            System.out.println(part);
+            holder.add(part);
+        }
+        holder.remove(element);
+        for (String elem: holder){
+            if(i==0){
+                output.concat(elem);
+                i++;
+            }else{
+                output.concat(" "+ elem);
+            }
+            output= output.replaceAll(" ", ",");
+        }
+        System.out.println(output);
+        return output;
     }
 
     public String replaceUnderscore(String answer){
@@ -234,6 +258,7 @@ public class Controller {
         }
 
     }
+
 
 }
 

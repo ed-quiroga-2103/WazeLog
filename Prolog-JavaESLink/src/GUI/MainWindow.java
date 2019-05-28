@@ -25,8 +25,11 @@ import javafx.stage.Stage;
 import org.jpl7.Atom;
 import org.jpl7.Query;
 import org.jpl7.Term;
+import org.jpl7.Variable;
 import org.json.simple.JSONObject;
 
+import java.io.IOException;
+import java.io.InputStream;
 
 
 public class MainWindow extends Application {
@@ -67,7 +70,7 @@ public class MainWindow extends Application {
                 "con verde solamente van en un sentido." +
                 " El segmento verde de la linea parte del origen y el amarillo concluye en el destino.\n" +
                 "Para realizar una consulta, envie un mensaje que diga 'Quiero realizar una consulta' o" +
-                " presione el boton 'Realizar Consulta' en el menu 'Opciones'.", display, false);
+                " presione el boton 'Realizar Consulta' en el menu 'Opciones'.\n", display, false);
 
 
         //Drawing nodes from metadata
@@ -127,6 +130,17 @@ public class MainWindow extends Application {
         //Action Events
 
         //Option actions
+        menuConsult.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                ConsultWindow cw = new ConsultWindow();
+                try {
+                    cw.start(graphicData, display);
+                }
+                catch (Exception e ){e.printStackTrace();}
+            }
+        });
+
         createNode.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
@@ -219,23 +233,35 @@ public class MainWindow extends Application {
     }
 
     public static void main(String[] args) throws Exception {
-        launch(args);
-  /*      Query q1 =
+        //launch(args);
+        Query q1 =
                 new Query(
                         "consult",
-                        new Term[]{new Atom("test.pl")}
+                        new Term[]{new Atom("/home/eduardo/Documents/WazeLog/test.pl")}
                 );
-
-        System.out.println( "consult " + (q1.hasSolution() ? "succeeded" : "failed"));
-        Query q2 =
+        System.out.println("consult " + (q1.hasSolution() ? "succeeded" : "failed"));
+        Variable X = new Variable("X");
+        Query q4 =
                 new Query(
-                        "child_of",
-                        new Term[] {new Atom("joe"),new Atom("ralf")}
+                        "preg1",
+                        new Term[]{X}
                 );
-        System.out.println(
-                "child_of(joe,ralf) is " +
-                        ( q2.hasSolution() ? "provable" : "not provable" )
+        java.util.Map<String,Term> solution;
+
+        solution = q4.oneSolution();
+
+        System.out.println(solution.get("X"));
+        String f = "2018";
+        X = new Variable("X");
+        Variable Y = new Variable("Y");
+
+        Query q2 = new Query(
+                "preg2",
+                new Term[]{new Atom("alemania"),X,Y}
         );
-*/
+        solution = q2.oneSolution();
+
+        System.out.println(solution.get("X"));
     }
+
 }

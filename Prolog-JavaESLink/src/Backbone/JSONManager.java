@@ -6,15 +6,10 @@ import DataStructures.NodeData;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
-import org.w3c.dom.Node;
 
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.Scanner;
 import java.util.Vector;
 
 public class JSONManager {

@@ -6,6 +6,8 @@ import GUI.PopupWindow;
 import javafx.scene.control.Label;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
+
+
 //Factory that returns nodes for the map display
 public class GraphicNodeFactory {
 
@@ -47,7 +49,6 @@ public class GraphicNodeFactory {
 
 
     }
-
     //Single node creation
     public static Label getCircle(Long x, Long y, String text, Color color){
         //Creates a new circle object and a node
@@ -77,5 +78,5 @@ public class GraphicNodeFactory {
 
 
     }
-
+    
 }

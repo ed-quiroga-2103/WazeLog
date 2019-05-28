@@ -21,8 +21,9 @@ public class ConnectionWindow {
 
     //Graphic nodes
     private GridPane gridPane = new GridPane();
-    private Button button = new Button("Conectar");
+    private Button buttonCons = new Button("Conectar");
     private Stage primaryStage = new Stage();
+
     private ChoiceBox<String> originBox = new ChoiceBox<>();
     private ChoiceBox<String> destinyBox = new ChoiceBox<>();
     private TextField distance = new TextField();
@@ -45,7 +46,7 @@ public class ConnectionWindow {
 
         gridPane.add(new Label("Destino"),0,1);
         gridPane.add(destinyBox,1,1);
-        HBox buttonBox = new HBox(button);
+        HBox buttonBox = new HBox(buttonCons);
         buttonBox.setAlignment(Pos.CENTER);
         gridPane.add(new Label("Distancia:"),0,2);
         gridPane.add(distance,1,2);
@@ -54,8 +55,10 @@ public class ConnectionWindow {
         gridPane.add(isDouble,0,3);
         gridPane.add(buttonBox,0,6,2,2);
 
+        System.out.println(primaryStage.getWidth());
+
         //Button action event
-        button.setOnAction(new EventHandler<ActionEvent>() {
+        buttonCons.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
 
@@ -66,7 +69,7 @@ public class ConnectionWindow {
 
                 if(!originEmpty & !destinyEmpty & distance.getText().length() != 0){
                     controller.connectNodes(originBox.getValue(), destinyBox.getValue(), 0, isDouble.isSelected(), graphicData, root);
-                    //primaryStage.close();
+                    primaryStage.close();
                 }
                 else{
 

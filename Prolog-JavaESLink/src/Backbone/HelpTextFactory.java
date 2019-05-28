@@ -2,7 +2,7 @@ package Backbone;
 //Factory that returns help messages
 public class HelpTextFactory {
 
-    public static String getHelp(int helpCode){
+    public static String getHelp(Integer helpCode){
 
         switch (helpCode){
             //Consult help

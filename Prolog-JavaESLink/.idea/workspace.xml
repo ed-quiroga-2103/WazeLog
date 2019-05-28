@@ -3,31 +3,31 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prolog-JavaLink.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Prolog-JavaLink.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/metadata.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/Backbone/GraphicNodeFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prolog-JavaLink/Backbone/GraphicNodeFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/Backbone/HelpTextFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prolog-JavaLink/Backbone/HelpTextFactory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/Backbone/JSONManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prolog-JavaLink/Backbone/JSONManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/DataStructures/GraphicData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prolog-JavaLink/DataStructures/GraphicData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/ConnectionWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/ConnectionWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/ConnectionWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/ConnectionWindow$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/Controller.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/MainWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/MainWindow$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/MainWindow$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/MainWindow$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/MainWindow$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/MainWindow$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/MainWindow$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/MainWindow$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/MainWindow$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/MainWindow$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/MainWindow$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/MainWindow$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/MainWindow$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/MainWindow$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/MainWindow$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/MainWindow$8.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/MainWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/MainWindow.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/PopupWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/PopupWindow$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/PopupWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prolog-JavaLink/GUI/PopupWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Prolog-JavaLink/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prolog-JavaLink/module-info.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Backbone/GraphicNodeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backbone/GraphicNodeFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backbone/HelpTextFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backbone/HelpTextFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Backbone/JSONManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backbone/JSONManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataStructures/Arc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataStructures/Arc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataStructures/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataStructures/Graph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataStructures/GraphNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataStructures/GraphNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataStructures/GraphicData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataStructures/GraphicData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI/ConnectionWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/ConnectionWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/MainWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI/PopupWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/PopupWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.pl" beforeDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -105,37 +105,43 @@
     <session id="1945759230">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.52" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.open.time.56" value="1" />
+          <entry key="project.open.time.58" value="1" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="JSONManager" value="1" />
+          <entry key="JAVA/DataStructures" value="1" />
+          <entry key="JAVA/GUI" value="1" />
+          <entry key="JSONManager" value="2" />
           <entry key="JavaLink" value="1" />
           <entry key="MainWindow" value="1" />
+          <entry key="NodeData" value="1" />
           <entry key="class" value="4" />
           <entry key="fxml" value="2" />
           <entry key="iml" value="1" />
-          <entry key="java" value="51" />
-          <entry key="pl" value="1" />
-          <entry key="txt" value="13" />
+          <entry key="java" value="71" />
+          <entry key="pl" value="3" />
+          <entry key="txt" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="4" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="51" />
-          <entry key="PLAIN_TEXT" value="13" />
-          <entry key="Perl" value="1" />
-          <entry key="UML" value="3" />
+          <entry key="JAVA" value="71" />
+          <entry key="PLAIN_TEXT" value="14" />
+          <entry key="Perl" value="3" />
+          <entry key="UML" value="7" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
@@ -143,16 +149,16 @@
         <counts>
           <entry key="dummy" value="19" />
           <entry key="fxml" value="6" />
-          <entry key="java" value="20228" />
-          <entry key="pl" value="15" />
+          <entry key="java" value="22414" />
+          <entry key="pl" value="721" />
           <entry key="txt" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="20228" />
+          <entry key="JAVA" value="22414" />
           <entry key="PLAIN_TEXT" value="24" />
-          <entry key="Perl" value="15" />
+          <entry key="Perl" value="721" />
           <entry key="XML" value="6" />
         </counts>
       </usages-collector>
@@ -163,11 +169,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/GUI/MainWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="133" column="124" selection-start-line="133" selection-start-column="124" selection-end-line="133" selection-end-column="124" />
+            <state relative-caret-position="465">
+              <caret line="263" column="46" selection-start-line="263" selection-start-column="46" selection-end-line="263" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -176,23 +182,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Backbone/HelpTextFactory.java">
+        <entry file="file://$PROJECT_DIR$/src/GUI/ConsultWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Backbone/GraphicNodeFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+            <state relative-caret-position="192">
+              <caret line="100" column="65" selection-start-line="100" selection-start-column="65" selection-end-line="100" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#getCircle#0;class#GraphicNodeFactory#0" />
-                <element signature="method#getCircle#1;class#GraphicNodeFactory#0" />
               </folding>
             </state>
           </provider>
@@ -201,8 +196,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GUI/PopupWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+            <state relative-caret-position="87">
+              <caret line="33" column="27" lean-forward="true" selection-start-line="33" selection-end-line="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GUI/IDestWindow.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -213,13 +220,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GUI/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="55" column="55" selection-start-line="55" selection-start-column="55" selection-end-line="55" selection-end-column="55" />
+            <state relative-caret-position="187">
+              <caret line="107" column="22" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#UpdateText#0;class#Controller#0" />
-                <element signature="method#drawPath#0;class#Controller#0" />
+                <element signature="method#UpdateText#1;class#Controller#0" />
                 <element signature="method#fillBoxes#0;class#Controller#0" />
+                <element signature="method#fillBoxesExcept#0;class#Controller#0" />
+                <element signature="method#buildConsult#0;class#Controller#0" />
                 <element signature="method#drawExistingNodes#0;class#Controller#0" />
                 <element signature="method#drawCircle#0;class#Controller#0" />
                 <element signature="method#drawCircle#1;class#Controller#0" />
@@ -234,20 +242,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GUI/ConnectionWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1015">
-              <caret line="85" column="27" selection-start-line="85" selection-start-column="27" selection-end-line="85" selection-end-column="27" />
+            <state relative-caret-position="60">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/module-info.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -287,22 +286,25 @@
         <option value="$PROJECT_DIR$/src/GUI/Main.java" />
         <option value="$PROJECT_DIR$/src/DataStructures/DataNode.java" />
         <option value="$PROJECT_DIR$/src/DataStructures/ConnectionData.java" />
-        <option value="$PROJECT_DIR$/src/DataStructures/NodeData.java" />
         <option value="$PROJECT_DIR$/metadata.txt" />
-        <option value="$PROJECT_DIR$/src/GUI/PopupWindow.java" />
         <option value="$PROJECT_DIR$/src/GUI/Arrow.java" />
-        <option value="$PROJECT_DIR$/src/Backbone/JSONManager.java" />
         <option value="$PROJECT_DIR$/src/DataStructures/GraphicData.java" />
         <option value="$PROJECT_DIR$/src/module-info.java" />
-        <option value="$PROJECT_DIR$/test.pl" />
         <option value="$PROJECT_DIR$/src/DataStructures/Graph.java" />
         <option value="$PROJECT_DIR$/src/DataStructures/GraphNode.java" />
         <option value="$PROJECT_DIR$/src/DataStructures/Arc.java" />
-        <option value="$PROJECT_DIR$/src/GUI/ConnectionWindow.java" />
-        <option value="$PROJECT_DIR$/src/GUI/Controller.java" />
-        <option value="$PROJECT_DIR$/src/GUI/MainWindow.java" />
+        <option value="$PROJECT_DIR$/src/DataStructures/NodeData.java" />
+        <option value="$PROJECT_DIR$/src/Backbone/JSONManager.java" />
+        <option value="$PROJECT_DIR$/src/GUI/PopupWindow.java" />
         <option value="$PROJECT_DIR$/src/Backbone/HelpTextFactory.java" />
         <option value="$PROJECT_DIR$/src/Backbone/GraphicNodeFactory.java" />
+        <option value="$PROJECT_DIR$/src/Backbone/JavaPrologLink.java" />
+        <option value="$PROJECT_DIR$/test.pl" />
+        <option value="$PROJECT_DIR$/src/GUI/ConnectionWindow.java" />
+        <option value="$PROJECT_DIR$/src/GUI/IDestWindow.java" />
+        <option value="$PROJECT_DIR$/src/GUI/ConsultWindow.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Controller.java" />
+        <option value="$PROJECT_DIR$/src/GUI/MainWindow.java" />
       </list>
     </option>
   </component>
@@ -326,7 +328,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -365,7 +367,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -382,7 +384,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558904420453" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559062530992" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/jpl-7.0.1.jar!/" />
     <property name="project.structure.last.edited" value="Project" />
@@ -505,18 +507,21 @@
       <workItem from="1558634696086" duration="38983000" />
       <workItem from="1558804830874" duration="9808000" />
       <workItem from="1558815649527" duration="6521000" />
-      <workItem from="1558889123860" duration="9874000" />
+      <workItem from="1558889123860" duration="13992000" />
+      <workItem from="1558967585600" duration="2810000" />
+      <workItem from="1558970897789" duration="23222000" />
+      <workItem from="1559059354670" duration="3193000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87391000" />
+    <option name="totallyTimeSpent" value="120734000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.23030303" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.24166666" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -525,7 +530,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32952693" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.19086461" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33278957" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39967373" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -534,10 +539,10 @@
       <window_info anchor="bottom" id="Problems" order="8" />
       <window_info anchor="bottom" id="Changes" order="9" />
       <window_info anchor="bottom" id="Profiler" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" weight="0.32952693" />
+      <window_info anchor="bottom" id="Event Log" order="11" weight="0.045677" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32626426" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="14" weight="0.32952693" />
+      <window_info anchor="bottom" id="Terminal" order="14" weight="0.28548124" />
       <window_info anchor="bottom" id="Version Control" order="15" weight="0.32952693" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -589,6 +594,32 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -666,63 +697,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="uml://JAVA/Backbone.JSONManager">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>Backbone.JSONManager</OriginalElement>
-          <nodes>
-            <node x="" y="">Backbone.JSONManager</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.7000000000000001" x="104.0" y="64.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-            <Category>Properties</Category>
-            <Category>Inner Classes</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/Arrow.java" />
-    <entry file="file://$PROJECT_DIR$/src/Backbone/JSONManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="83" column="50" selection-start-line="83" selection-start-column="50" selection-end-line="83" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#writeJSON#0;class#JSONManager#0" />
-            <element signature="method#readJSON#0;class#JSONManager#0" />
-            <element signature="method#getGraphicDataFromJson#0;class#JSONManager#0" />
-            <element signature="method#getNodeFromJSON#0;class#JSONManager#0" />
-            <element signature="method#getConnectionFromJSON#0;class#JSONManager#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataStructures/GraphicData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#newNode#0;class#GraphicData#0" />
-            <element signature="method#newNode#1;class#GraphicData#0" />
-            <element signature="method#connectNodes#0;class#GraphicData#0" />
-            <element signature="method#getNode#0;class#GraphicData#0" />
-            <element signature="method#toJSON#0;class#GraphicData#0" />
-            <element signature="method#getCoords#0;class#GraphicData#0" />
-            <element signature="method#getNames#0;class#GraphicData#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DataStructures/PriorityNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -734,17 +709,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataStructures/NodeData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="75" column="18" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#addNewConnection#0;class#NodeData#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -776,54 +740,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataStructures/GraphNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
-          <folding>
-            <element signature="method#GraphNode#0;class#GraphNode#0" />
-            <element signature="method#newArc#0;class#GraphNode#0" />
-            <element signature="docComment;method#printNodes#0;class#GraphNode#0" />
-            <element signature="method#printNodes#0;class#GraphNode#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.pl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/module-info.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metadata.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="60" lean-forward="true" selection-start-column="60" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataStructures/Graph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="228" selection-start-line="228" selection-end-line="228" />
-          <folding>
-            <element signature="method#newNode#0;class#Graph#0" />
-            <element signature="method#getRoute#0;class#Graph#0" />
-            <element signature="method#connectNodes#0;class#Graph#0" />
-            <element signature="method#nodeExists#0;class#Graph#0" />
-            <element signature="method#getNode#0;class#Graph#0" />
-            <element signature="method#getDijksDistances#0;class#Graph#0" />
-            <element signature="method#getNextUnvisited#0;class#Graph#0" />
-            <element signature="method#fillVector#0;class#Graph#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -834,10 +754,232 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/metadata.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="60" lean-forward="true" selection-start-column="60" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataStructures/GraphNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/DataStructures.NodeData">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>DataStructures.NodeData</OriginalElement>
+          <nodes>
+            <node x="" y="">DataStructures.NodeData</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="59.0" y="16.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/DataStructures">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>DataStructures</OriginalElement>
+          <nodes>
+            <node x="" y="">DataStructures.NodeData</node>
+            <node x="" y="">DataStructures.GraphicData</node>
+            <node x="" y="">DataStructures.ConnectionData</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.9753246753246753" x="-132.0" y="267.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataStructures/NodeData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="60" column="5" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataStructures/Graph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="228" selection-start-line="228" selection-end-line="228" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/GUI">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>GUI</OriginalElement>
+          <nodes>
+            <node x="301.0" y="321.0">GUI.PopupWindow</node>
+            <node x="150.46527777777789" y="0.0">GUI.Controller</node>
+            <node x="318.7430555555556" y="426.0">GUI.MainWindow</node>
+            <node x="0.0" y="321.0">GUI.ConnectionWindow</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="GUI.ConnectionWindow" target="GUI.Controller">
+              <point x="-70.25" y="-27.5" />
+              <point x="70.25" y="296.0" />
+              <point x="197.63194444444457" y="296.0" />
+              <point x="-235.83333333333331" y="135.5" />
+            </edge>
+            <edge source="GUI.MainWindow" target="GUI.Controller">
+              <point x="74.25" y="-39.5" />
+              <point x="491.9930555555556" y="406.0" />
+              <point x="674.5" y="406.0" />
+              <point x="674.5" y="296.0" />
+              <point x="669.2986111111111" y="296.0" />
+              <point x="235.8333333333332" y="135.5" />
+            </edge>
+            <edge source="GUI.PopupWindow" target="GUI.Controller">
+              <point x="-88.0" y="-27.5" />
+              <point x="389.0" y="296.0" />
+              <point x="386.2986111111112" y="296.0" />
+              <point x="-47.166666666666686" y="135.5" />
+            </edge>
+            <edge source="GUI.MainWindow" target="GUI.ConnectionWindow">
+              <point x="-74.25" y="-39.5" />
+              <point x="343.4930555555556" y="406.0" />
+              <point x="70.25" y="406.0" />
+              <point x="-70.25" y="27.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="159.0" y="219.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>public</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataStructures/GraphicData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="12" column="55" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#newNode#0;class#GraphicData#0" />
+            <element signature="method#newNode#1;class#GraphicData#0" />
+            <element signature="method#connectNodes#0;class#GraphicData#0" />
+            <element signature="method#getNode#0;class#GraphicData#0" />
+            <element signature="method#toJSON#0;class#GraphicData#0" />
+            <element signature="method#getCoords#0;class#GraphicData#0" />
+            <element signature="method#getNames#0;class#GraphicData#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/Backbone.JSONManager">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>Backbone.JSONManager</OriginalElement>
+          <nodes>
+            <node x="" y="">Backbone.JSONManager</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="255.0" y="76.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>public</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Backbone/HelpTextFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="96" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="26" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Backbone/GraphicNodeFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="80" column="4" selection-start-line="80" selection-start-column="4" selection-end-line="80" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getCircle#0;class#GraphicNodeFactory#0" />
+            <element signature="method#getCircle#1;class#GraphicNodeFactory#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Backbone/JSONManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Backbone/JavaPrologLink.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.pl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/ConnectionWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1015">
-          <caret line="85" column="27" selection-start-line="85" selection-start-column="27" selection-end-line="85" selection-end-column="27" />
+        <state relative-caret-position="60">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/IDestWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/PopupWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="33" column="27" lean-forward="true" selection-start-line="33" selection-end-line="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -846,13 +988,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="55" column="55" selection-start-line="55" selection-start-column="55" selection-end-line="55" selection-end-column="55" />
+        <state relative-caret-position="187">
+          <caret line="107" column="22" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#UpdateText#0;class#Controller#0" />
-            <element signature="method#drawPath#0;class#Controller#0" />
+            <element signature="method#UpdateText#1;class#Controller#0" />
             <element signature="method#fillBoxes#0;class#Controller#0" />
+            <element signature="method#fillBoxesExcept#0;class#Controller#0" />
+            <element signature="method#buildConsult#0;class#Controller#0" />
             <element signature="method#drawExistingNodes#0;class#Controller#0" />
             <element signature="method#drawCircle#0;class#Controller#0" />
             <element signature="method#drawCircle#1;class#Controller#0" />
@@ -863,10 +1006,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/PopupWindow.java">
+    <entry file="file://$PROJECT_DIR$/src/GUI/ConsultWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+        <state relative-caret-position="192">
+          <caret line="100" column="65" selection-start-line="100" selection-start-column="65" selection-end-line="100" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -875,29 +1018,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/MainWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="133" column="124" selection-start-line="133" selection-start-column="124" selection-end-line="133" selection-end-column="124" />
+        <state relative-caret-position="465">
+          <caret line="263" column="46" selection-start-line="263" selection-start-column="46" selection-end-line="263" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Backbone/HelpTextFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Backbone/GraphicNodeFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getCircle#0;class#GraphicNodeFactory#0" />
-            <element signature="method#getCircle#1;class#GraphicNodeFactory#0" />
           </folding>
         </state>
       </provider>

@@ -33,7 +33,9 @@ public class Controller {
     //Updating text on screen
     public void UpdateText(TextField textInput, TextArea textDisplay){
 
-        displayText+= textInput.getText() + "\n";
+        String text = this.replaceSpace(textInput.getText());
+
+        displayText+= text + "\n";
 
         textDisplay.setText(this.displayText);
 
@@ -41,7 +43,7 @@ public class Controller {
         textDisplay.setScrollTop(Double.MAX_VALUE);
 
     }
-    public void UpdateText(String text, TextArea textDisplay,boolean clear){
+    public void UpdateText(String text, TextArea textDisplay, Boolean clear){
         if(clear) {
             displayText = "";
             displayText += text;
@@ -57,11 +59,6 @@ public class Controller {
         }
     }
 
-
-    public void drawPath(){
-
-    }
-
     //Fills the Choice Box with the nodes data
     public void fillBoxes(ChoiceBox<String> choiceBox, GraphicData graphicData){
 
@@ -72,6 +69,43 @@ public class Controller {
         }
 
 
+    }
+
+    public void fillBoxesExcept(ChoiceBox<String> choiceBox, GraphicData graphicData, String exc1, String exc2){
+
+        for (NodeData node:graphicData.getList()) {
+
+            if(node.getLabel() != exc1 & node.getLabel() != exc2){
+
+                choiceBox.getItems().add(node.getLabel());
+            }
+        }
+    }
+
+    public String buildConsult(String origin, String interm, String destiny){
+        String consult;
+
+        if(interm.length()!= 0) {
+            consult = origin + "," + interm + "," + destiny;
+        }
+        else{
+            consult = origin+","+destiny;
+        }
+        return consult;
+
+    }
+
+    public String replaceSpace(String text){
+
+        String result = text.replaceAll(" ", "_").toLowerCase();
+
+        return result;
+
+    }
+
+    public String replaceUnderscore(String answer){
+        String result = answer.replaceAll("_", "_");
+        return result;
     }
 
     //Draws nodes from metadata

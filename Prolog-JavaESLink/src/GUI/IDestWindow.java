@@ -1,9 +1,7 @@
 package GUI;
 
-import Backbone.JSONManager;
 import DataStructures.GraphicData;
 import DataStructures.NodeData;
-import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
@@ -11,29 +9,34 @@ import javafx.geometry.Pos;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 
-public class PopupWindow{
+public class IDestWindow {
     //Controller declaration
     private Controller controller = new Controller();
 
     //Graphic nodes declarations
     private GridPane gridPane = new GridPane();
-    private Button button = new Button("Finalizar");
-    private TextField name = new TextField();
+    private Button button = new Button("Agregar");
+    private ChoiceBox<String> placeBox = new ChoiceBox<>();
     private Group root = new Group(gridPane);
 
 
-    public void start(Label label, NodeData newNode, GraphicData graphicData) throws Exception {
+    public void start(TextField field, GraphicData graphicData, String exc1, String exc2) throws Exception {
         //Basic settings
+
+        controller.fillBoxesExcept(placeBox, graphicData, exc1, exc2);
+        gridPane.setPadding(new Insets(10, 10, 10, 10)); //margins around the whole grid
+
         Stage primaryStage = new Stage();
         gridPane.setPadding(new Insets(10, 10, 10, 10)); //margins around the whole grid
-        gridPane.add(new Label("Nombre:"),0,0);
-        gridPane.add(name,1,0);
+        gridPane.add(new Label("Destino:"),0,0);
+        gridPane.add(placeBox,1,0);
         HBox buttonBox = new HBox(button);
         buttonBox.setAlignment(Pos.CENTER);
         gridPane.add(buttonBox,0,2,2,2);
@@ -42,8 +45,19 @@ public class PopupWindow{
         button.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
+                String text = field.getText();
 
-                controller.addNode(label,name.getText(),newNode,graphicData);
+                if(text.length() != 0) {
+                    text += "," + placeBox.getValue();
+
+                    field.setText(text);
+                }
+                else{
+
+                    text+=placeBox.getValue();
+                    field.setText(text);
+
+                }
                 primaryStage.close();
             }
         });
@@ -52,4 +66,5 @@ public class PopupWindow{
         primaryStage.show();
 
     }
+
 }

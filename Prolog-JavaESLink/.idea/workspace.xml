@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../Dijkstra.pl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/metadata.txt" beforeDir="false" afterPath="$PROJECT_DIR$/metadata.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test.pl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataStructures/Arc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataStructures/Graph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataStructures/GraphNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataStructures/PriorityNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataStructures/PriorityStack.java" beforeDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -264,7 +266,7 @@
         <entry file="file://$PROJECT_DIR$/metadata.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="63" selection-start-column="63" selection-end-column="63" />
+              <caret column="845" selection-start-column="845" selection-end-column="845" />
             </state>
           </provider>
         </entry>
@@ -416,7 +418,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559085832860" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559087138716" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/jpl-7.0.1.jar!/" />
     <property name="project.structure.last.edited" value="Project" />
@@ -543,16 +545,15 @@
       <workItem from="1558967585600" duration="2810000" />
       <workItem from="1558970897789" duration="23222000" />
       <workItem from="1559059354670" duration="3193000" />
-      <workItem from="1559064363228" duration="10894000" />
+      <workItem from="1559064363228" duration="11521000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131628000" />
+    <option name="totallyTimeSpent" value="132255000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.24545455" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -563,7 +564,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32952693" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33278957" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33278957" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39967373" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -575,7 +576,7 @@
       <window_info anchor="bottom" id="Event Log" order="11" weight="0.045677" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32626426" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="14" visible="true" weight="0.28548124" />
+      <window_info anchor="bottom" id="Terminal" order="14" weight="0.28548124" />
       <window_info anchor="bottom" id="Version Control" order="15" weight="0.32952693" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1092,7 +1093,7 @@
     <entry file="file://$PROJECT_DIR$/metadata.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="63" selection-start-column="63" selection-end-column="63" />
+          <caret column="845" selection-start-column="845" selection-end-column="845" />
         </state>
       </provider>
     </entry>

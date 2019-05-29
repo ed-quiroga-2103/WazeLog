@@ -86,3 +86,5 @@ afirmacion([si]).
 negacion([no]).
 
 expresion([muchas_gracias]).
+
+%Para la descripcion del analizador gramatical, refierase a la documentacion del proyecto en la cual se explica el mecanismo de trabajo y su utilidad.

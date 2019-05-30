@@ -1,18 +1,18 @@
 :-include('BaseConocimientos.pl').
 
 %Reglas Gramaticales
-oracion(O):- sintagma_nominal(SN), sintagma_verbal(SV), append(SN,SV,O).
 oracion(O):- sintagma_nominal(O).
 oracion(O):- sintagma_verbal(O).
+oracion(O):- sintagma_nominal(SN), sintagma_verbal(SV), append(SN,SV,O).
 
-sintagma_nominal(SN):- saludo(SAL),nombre(N),append(SAL,N,SN).
-sintagma_nominal(SN):- articulo(A), nombre(N), append(A,N,SN).
-sintagma_nominal(SN):- articulo(A), sustantivo(S), append(A,S,SN).
 sintagma_nominal(SN):- lugar(SN).
 sintagma_nominal(SN):- nombre(SN).
 sintagma_nominal(SN):- saludo(SN).
 sintagma_nominal(SN):- afirmacion(SN).
 sintagma_nominal(SN):- negacion(SN).
+sintagma_nominal(SN):- saludo(SAL),nombre(N),append(SAL,N,SN).
+sintagma_nominal(SN):- articulo(A), nombre(N), append(A,N,SN).
+sintagma_nominal(SN):- articulo(A), sustantivo(S), append(A,S,SN).
 sintagma_nominal(SN):- preposicion(P),lugar(L),append(P,L,SN).
 sintagma_nominal(SN):- expresion(E),preposicion(P),append(E,P,SN).
 

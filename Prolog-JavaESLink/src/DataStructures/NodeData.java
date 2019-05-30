@@ -11,6 +11,7 @@ public class NodeData {
     private String label;
     private Vector<ConnectionData> connections = new Vector<>();
 
+
     public NodeData(Long x, Long y, String label) {
         this.x = x;
         this.y = y;
@@ -59,6 +60,8 @@ public class NodeData {
 
 
     }
+
+    //----------------------------------------------
 
     public Long getX() {
         return x;

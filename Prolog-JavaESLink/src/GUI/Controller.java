@@ -77,7 +77,7 @@ public class Controller {
 
 
     }
-
+    //Fills the Choice Box excluding two arguments
     public void fillBoxesExcept(ChoiceBox<String> choiceBox, GraphicData graphicData, String exc1, String exc2){
 
         for (NodeData node:graphicData.getList()) {
@@ -88,7 +88,7 @@ public class Controller {
             }
         }
     }
-
+    //Builds the consult string for Prolog
     public String buildConsult(String origin, String interm, String destiny){
         String consult;
 
@@ -101,7 +101,7 @@ public class Controller {
         return consult;
 
     }
-
+    //Replaces a space with an underscore
     public String replaceSpace(String text){
 
         String result = text.replaceAll(" ", "_").toLowerCase();
@@ -109,7 +109,7 @@ public class Controller {
         return result;
 
     }
-
+    //Deletes an element from a string divided by commas
     public String deleteElement(String input, String element){
         String output = new String();
         String[] parts = input.split(",");
@@ -130,12 +130,12 @@ public class Controller {
         }
         return output;
     }
-
+    //Replaces an underscore with a space
     public String replaceUnderscore(String answer){
         String result = answer.replaceAll("_", " ");
         return result;
     }
-
+    //Divides a string into pairs divided by commas
     public LinkedList<LinkedList<String>> getPairs(String consulta){
         // Split line on comma.
         LinkedList<String> temp = new LinkedList<String>();
@@ -155,7 +155,7 @@ public class Controller {
         return output;
 
     }
-
+    //Consults all the routes in a complete course
     public LinkedList<String> getAllRoutes(String route){
 
         LinkedList<LinkedList<String>> routes = this.getPairs(route);
@@ -169,7 +169,7 @@ public class Controller {
         return list;
 
     }
-
+    //Consults if a route exist
     public String consultRoute(String origin, String destiny){
 
         String finalRoute = "";

@@ -39,6 +39,8 @@ public class ConsultWindow {
         destinyBox.setMinWidth(200);
         gridPane.setPadding(new Insets(10, 10, 10, 10)); //margins around the whole grid
 
+        distance.setEditable(false);
+
         Menu menu1 = new Menu("Destinos Intermedios");
         MenuItem menuNew = new MenuItem("Nuevo Destino Intermedio");
         MenuItem menuCon = new MenuItem("Eliminar Destino Intermedio");

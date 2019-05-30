@@ -18,7 +18,7 @@ validacion(L):- ( oracion(L)-> true
 validacion_aux(T):- ( list_butlast(T,S),reverse(S,[],X),concatenar([cartago],X,P),reverse(P,[],E), oracion(E) -> validacion_aux2(T)
                      ; write('No entendi, podria volverlo a escribir siendo un poco mas especifico si no es mucha molestia') ).
 
-validacion_aux2(T):- ( last_element(T,X),lugar([X]) -> write('no se que pasa')
+validacion_aux2(T):- ( last_element(T,X),lugar([X]) -> write('Disculpe, no entendi su respuesta')
                      ; write('El lugar indicado no se encuentra en la base de datos') ).
 
 
